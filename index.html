@@ -14,18 +14,23 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body
-    style="background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(34,102,138,1) 0%, rgba(154,118,255,1) 80.6% ); box-sizing: border-box;">
-    <div class="d-flex flex-wrap flex-column align-content-center justify-content-center my-5 border rounded-pill"
-        style="background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );">
+<body>
+    <div class="d-flex text-light flex-wrap flex-column align-content-center justify-content-center my-5" style="background-color: #08AEEA;
+        background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+        ">
 
         <div class="text-light mt-5">
             <h1>Weather App</h1>
         </div>
         <div class="d-flex">
-            <input type="text" class="form-control align-self-center" onchange="getData(this.value)"
-                placeholder="Enter city name">
-            <button class="btn-grad align-self-center">Search</button>
+            <input type="text" class="form-control align-self-center value" placeholder="Enter city name">
+            <button class="btn-grad align-self-center btn">Search</button>
+        </div>
+        <div class="sunny rounded-top rounded-bottom mb-5 text-center ">
+            <div class="city "></div>
+            <div>
+                <span class="temperature"></span>
+            </div>
         </div>
     </div>
 
