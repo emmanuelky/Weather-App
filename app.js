@@ -53,6 +53,8 @@ btn.addEventListener("click", () => {
             console.log(data)
         })
         .catch((error) => error)
+
+
 })
 
 
@@ -97,8 +99,6 @@ const defaultCity = () => {
             <div> <h4>Temperature:<h1>${data.main.temp.toFixed().toString().substr(0, 2) + '&deg' + 'c'}</h1></h4></div>
             <div class="d-flex flex-wrap flex-column"> <h6 class="mb-0 align-self-center mb-5 mt-5 text-dark">Sun Rise <i class="bi bi-sunrise-fill align-self-center" style="font-size: 30px"></i> (${sunRiseTime} A.M)</h6>
             <h6 class="align-self-center mb-5 text-dark">Sun Set <i class="bi bi-sunset-fill align-self-center" style="font-size: 30px"></i> (${sunSetTime} P.M)</h6></div></div>`
-
-
             console.log(data)
         })
         .catch((error) => error)
@@ -106,9 +106,9 @@ const defaultCity = () => {
 }
 
 
-
 window.onload = () => {
     defaultCity()
+
 }
 //clouds, rain, clear,
 
